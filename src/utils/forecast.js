@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
             const data = body.current
             callback(
               undefined,
-              `${data.weather_descriptions[0]}. The temperature is ${data.temperature} but it feels like ${data.feelslike}`
+              `${data.weather_descriptions[0]}. The temperature is ${data.temperature} but it feels like ${data.feelslike}. \t The humidity is ${data.humidity}%`
             );
 
         }
